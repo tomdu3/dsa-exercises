@@ -24,15 +24,26 @@ const rootNode = {
   },
 };
 
-// Depth-first search - added depth tracking
-function printTree(node, depth = 0) {
+const levels = [];
+// Depth-first search - added depth tracking and levels array
+function traverse(node, depth = 0) {
+  if (!levels[depth]) {
+    levels[depth] = [];
+  }
+
+  levels[depth].push(node.value);
+
   console.log(node.value, depth);
   if (node.left) {
-    printTree(node.left, depth + 1);
+    traverse(node.left, depth + 1);
   }
   if (node.right) {
-    printTree(node.right, depth + 1);
+    traverse(node.right, depth + 1);
   }
 }
 
-printTree(rootNode);
+traverse(rootNode);
+
+for (let level = 0; level < levels.length; level++) {
+  console.log(`Level ${level}:`, levels[level].join(", "));
+}
