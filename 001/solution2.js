@@ -29,10 +29,18 @@ function traverse(node) {
   const queue = [];
   queue.push({ node, depth: 0 });
 
+  let lastDepth = 0;
+  let output = "";
+
   while (queue.length > 0) {
     const { node, depth } = queue.shift();
-    console.log(node.value);
 
+    if (depth > lastDepth) {
+      output += "\n";
+      lastDepth = depth;
+    }
+
+    output += node.value + ", ";
     if (node.left) {
       queue.push({ node: node.left, depth: depth + 1 });
     }
@@ -40,6 +48,7 @@ function traverse(node) {
       queue.push({ node: node.right, depth: depth + 1 });
     }
   }
+  console.log(output);
 }
 
 traverse(rootNode);
