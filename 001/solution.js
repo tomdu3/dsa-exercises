@@ -24,13 +24,14 @@ const rootNode = {
   },
 };
 
-function printTree(node) {
-  console.log(node.value);
+// Depth-first search - added depth tracking
+function printTree(node, depth = 0) {
+  console.log(node.value, depth);
   if (node.left) {
-    printTree(node.left);
+    printTree(node.left, depth + 1);
   }
   if (node.right) {
-    printTree(node.right);
+    printTree(node.right, depth + 1);
   }
 }
 
