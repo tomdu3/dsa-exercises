@@ -29,7 +29,7 @@ Note: The second largest element should not be equal to the largest element.
 - 1 ≤ arr\[i\] ≤ 10<sup>5</sup>
 
 
-## Case 1
+***Case 1***
 - **Input**
 ```js
 arr = [12, 35, 1, 10, 34, 1]
@@ -38,3 +38,17 @@ arr = [12, 35, 1, 10, 34, 1]
 ```js
 34
 ```
+
+
+### \[Better Approach\] Two Pass Search
+
+> The approach is to traverse the array ****twice****. In the first traversal, find the ****maximum**** element. In the second traversal, find the maximum element ****ignoring the one we found in the first traversal****.
+
+****Time Complexity:**** O(n), as we are traversing the array only once.  
+****Auxiliary space:**** O(1)
+
+****Related Article****: [Smallest and second smallest element in an array](https://www.geeksforgeeks.org/to-find-smallest-and-second-smallest-element-in-an-array/)
+
+Useful links to help you understand the concepts of this problem:
+
+-   [https://www.geeksforgeeks.org/find-second-largest-element-array/](https://www.geeksforgeeks.org/find-second-largest-element-array/)
