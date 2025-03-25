@@ -1,4 +1,4 @@
-const Solution = require('./solution');
+const Solution = require('./solution2');
 
 describe('Solution', () => {
   let solution;
