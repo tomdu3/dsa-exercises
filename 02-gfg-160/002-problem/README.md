@@ -1,4 +1,4 @@
-### Move All Zeroes to End
+# Move All Zeroes to End
 
 Difficulty: **Easy**
 
