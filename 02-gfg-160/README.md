@@ -5,6 +5,7 @@ This is a collection of problems from [GeeksforGeeks 160 Days of Problem Solving
 ## Problems
 
 - [01 - Second Largest](02-gfg-160/001-problem/README.md)
+- [02 - Move All Zeroes to End](02-gfg-160/002-problem/README.md)
 
 
 ## Copyrigth
