@@ -7,9 +7,9 @@ This is a collection of problems from [GeeksforGeeks 160 Days of Problem Solving
 - [01 - Second Largest](02-gfg-160/001-problem/README.md)
 - [02 - Move All Zeroes to End](02-gfg-160/002-problem/README.md)
 - [03 - Reverse an Array](02-gfg-160/003-problem/README.md)
+- [04 - Rotate Array](02-gfg-160/004-problem/README.md)
 
-
-## Copyrigth
+## Copyright
 All the problems  are from [GeeksforGeeks 160 Days of Problem Solving](https://www.geeksforgeeks.org/batch/gfg-160-problems), if not stated otherwise. I have just put them in a separate repository for my own reference with my solutions.
 
 ## Author of the repository
